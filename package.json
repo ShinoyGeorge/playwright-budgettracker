@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "terra-leaf-api-server.js",
-  "scripts": {},
+  "scripts": {
+    "products": "npx playwright test tests/products.spec.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
