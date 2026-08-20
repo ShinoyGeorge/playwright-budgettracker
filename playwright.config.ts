@@ -30,7 +30,7 @@ export default defineConfig({
   ],
 
   webServer: {
-    command: 'npx serve terra-leaf-demo-shop.html',
+    command: 'npx serve two-jars-budget-tracker.html',
     url: 'http://localhost:3000',
     reuseExistingServer: !process.env.CI,
   },

@@ -1,0 +1,3 @@
+class UiContext {
+    url: string;
+}

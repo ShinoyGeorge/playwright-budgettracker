@@ -1,10 +1,10 @@
 {
-  "name": "playwright-terra",
+  "name": "playwright-budget-tracker",
   "version": "1.0.0",
   "description": "",
   "main": "terra-leaf-api-server.js",
   "scripts": {
-    "products": "npx playwright test tests/products.spec.ts"
+    "logins": "npx playwright test tests/login.spec.ts"
   },
   "keywords": [],
   "author": "",
