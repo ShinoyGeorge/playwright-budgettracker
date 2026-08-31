@@ -41,6 +41,8 @@ test.describe("Household Onboarding", () => {
         const adminPage = new AdminPage(adminSession);
         await expect(adminPage.heading).toBeVisible();
 
+
+        await adminPage.pendingRequestsTable.container.waitFor({ state: 'visible' });
         const requestRows: GridRow[] = await adminPage.pendingRequestsTable.rows();
         const rowTexts: string[][] = await Promise.all(
             requestRows.map(row => Promise.all(row.column.map(column => column.getText()))),

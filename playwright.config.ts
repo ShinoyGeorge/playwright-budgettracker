@@ -1,10 +1,15 @@
 import "./src/helpers/env";
 import { defineConfig } from "@playwright/test";
 
+const isHeadless = process.env.HEADLESS === 'true';
+
 export default defineConfig({
-    timeout: 120_000,
+    timeout: 20_000,
+    reporter: 'html',
     use: {
         baseURL: process.env.BASE_URL,
+        screenshot: 'only-on-failure',
+        trace: 'on',
     },
     projects: [
         {
@@ -12,7 +17,7 @@ export default defineConfig({
             testDir: "./src/tests",
             grep: /@regression/,
             use: {
-                headless: false,
+                headless: isHeadless,
             }
         },
     ]

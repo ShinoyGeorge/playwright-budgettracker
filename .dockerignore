@@ -1,0 +1,12 @@
+node_modules/
+test-results/
+playwright-report/
+.idea/
+src/.env.local
+src/.env.qa
+src/.env.uat
+src/.env.docker
+.mcp.json
+.ai/
+.claude/
+.git/

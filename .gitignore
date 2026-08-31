@@ -9,6 +9,7 @@ node_modules/
 src/.env.local
 src/.env.qa
 src/.env.uat
+src/.env.docker
 
 # MCP configs and local AI/IDE settings - specific to your machine
 .mcp.json
