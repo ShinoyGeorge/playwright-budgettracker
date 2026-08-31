@@ -1,8 +1,22 @@
-
-# Playwright
 node_modules/
 /test-results/
 /playwright-report/
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
+
+# environment files - real credentials
+src/.env.local
+src/.env.qa
+src/.env.uat
+
+# MCP configs and local AI/IDE settings - specific to your machine
+.mcp.json
+.ai/mcp/mcp.json
+.claude/settings.local.json
+
+# JetBrains project files
+.idea/
+
+# compiled output, if you ever build a standalone script in this repo
+dist/
